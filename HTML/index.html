@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Build Your Own Cheat Sheet project (CC)</title>
+    <link href="../CSS/style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CSS Specificity Reference</h1>
+      <h2>Specific Hierarchy</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Selector</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Inline styles</td>
+            <td>Attached directly to the element to be styled</td>
+          </tr>
+          <tr>
+            <td>IDs</td>
+            <td>Unique identifier for the page elements</td>
+          </tr>
+          <tr>
+            <td>Classes, attributes and pseudo-classes</td>
+            <td>Includes .classes, [attributes] and pseudo-classes such as :hover, :focus etc.</td>
+          </tr>
+          <tr>
+            <td>Elements and pseudo-elements</td>
+            <td>Includes element names and pseudo-elements, such as h1, div, :before and :after</td>
+          </tr>
+          <tr>
+            <td>Universal selector <code>*</code></td>
+            <td>Selects all elements</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Calculate Specificity</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Selector</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Inline styles</td>
+            <td>1000</td>
+          </tr>
+          <tr>
+            <td>IDs</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>Classes, attributes and pseudo-classes</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Elements and pseudo-elements</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Universal selector <code>*</code> (and inherited values)</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Examples</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Selector</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>h1</code></td>
+            <td>1 (one element)</td>
+          </tr>
+          <tr>
+            <td><code>#content h1</code></td>
+            <td>101 (one ID reference and one element)</td>
+          </tr>
+          <tr>
+            <td><code>&lt;div id="content"&gt;&lt;h1 style="color: #ffffff"&gt;Heading&lt;/h1&gt;&lt;/div&gt;</code></td>
+            <td>1000 (inline styling)</td>
+          </tr>
+          <tr>
+            <td colspan="2">Since 1 < 101 < 1000, the third rule (C) has a greater level of specificity, and therefore will be applied.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
