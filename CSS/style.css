@@ -1,0 +1,46 @@
+body {
+  background-color: lightYellow;
+}
+
+.container {
+  margin: auto;
+  width: 50%;
+  min-width: 600px;
+}
+
+h1, h2, td[colspan] {
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 1px 1px seaGreen;
+}
+
+h2 {
+  color: seaGreen;
+  text-shadow: 1px 1px black;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+table, th, td {
+  border: 2px solid seaGreen;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: mediumspringgreen;
+}
+
+code {
+  background-color: palegoldenrod;
+}
+
+.example {
+  border: 2px solid seaGreen;
+  width: 100%;
+  padding: 20px 0 0 20px;
+}
