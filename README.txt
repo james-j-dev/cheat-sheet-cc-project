@@ -1,7 +1,1 @@
-Git init with README file
-Testing second commit
-Final commit from Terminal
-First commit from VSC Terminal
-Text added directly on GitHub site (to fetch from VSC Terminal)
-Pulled above text, final commit from VSC Terminal
-
+CC project: CSS Specificity Reference
